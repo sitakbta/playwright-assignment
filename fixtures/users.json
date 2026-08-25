@@ -1,7 +1,12 @@
 {
     "validUser": {
         "username": "standard_user",
-        "password": "secret_sauce"
+        "password": "secret_sauce",
+        "profile": {
+            "firstName": "Standard",
+            "lastName": "User",
+            "postalCode": "D12345"
+        }
     },
     "invalidUser": {
         "username": "locked_out_user",
