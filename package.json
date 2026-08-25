@@ -19,5 +19,13 @@
     "playwright": "^1.62.1",
     "playwright-core": "^1.62.1",
     "undici-types": "^8.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitakbta/playwright-assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sitakbta/playwright-assignment/issues"
+  },
+  "homepage": "https://github.com/sitakbta/playwright-assignment#readme"
 }
