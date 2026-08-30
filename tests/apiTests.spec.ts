@@ -1,7 +1,7 @@
 import {test, expect} from "@playwright/test";
 
 //TC-API-01: Response Logic Validation
-test("TC-API-01: Response Logic Validation", async ({ request }) => {
+test("TC-API-01: Response Logic Validation (@api)", async ({ request }) => {
         // Send GET request to the fruits endpoint with JSON header
         const response = await request.get(
         "https://demo.playwright.dev/api-mocking/api/v1/fruits",

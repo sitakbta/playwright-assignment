@@ -9,11 +9,6 @@ This is a professional, industry-ready automation repository that integrates:
 - **UI Testing** with SauceDemo (https://www.saucedemo.com/)
 - **API Validation** with Playwright Fruit Mocking API (https://demo.playwright.dev/api-mocking/api/v1/fruits)
 
-### Objective
-Demonstrate mastery of modern testing with Playwright - showcasing the evolution from Selenium and Cypress to Playwright's speed and reliability.
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -22,28 +17,31 @@ Demonstrate mastery of modern testing with Playwright - showcasing the evolution
 
 ### Installation
 ```bash
+# Install playwright locally
+npm init playwright@latest
+
 # Install dependencies
-npm install
+npx playwright install
 ```
 
 ### Running Tests
 
 ```bash
 # Run all tests
-npm test
+npx playwright test
 
 # Run specific test file
-npm test tests/SauceDemoTests.spec.ts
-npm test tests/apiTests.spec.ts
+npx playwright test tests/SauceDemoTests.spec.ts
+npx playwright test tests/apiTests.spec.ts
 
 # Run tests with UI Mode (interactive debugging)
-npm run test:ui
+npx playwright test --ui
 
 # Run tests in debug mode
-npm run test:debug
+npx playwright test –-debug
 
 # View HTML test report
-npm run report
+npx playwright show-report
 ```
 
 ### Run Specific Tests by Tag
@@ -161,7 +159,7 @@ Test data is stored in `fixtures/users.json` to separate test logic from test da
 **How to Debug:**
 1. Run with UI Mode:
    ```bash
-   npm run test:ui
+   npx playwright test --ui
    ```
    - Step through the test interactively
    - Hover over elements to inspect
@@ -193,7 +191,7 @@ Test data is stored in `fixtures/users.json` to separate test logic from test da
 
 ---
 
-### TC-API-01: Response Logic Validation
+### TC-API-01: Response Logic Validation (@api)
 **Action:** Send a GET request using the Playwright request object.
 
 **Requirement 1:** Validate the response status code is **200 OK**.
@@ -237,7 +235,7 @@ expect(responseString).not.toContain("camel");
 
 ### Reporter
 - **HTML Report** - Comprehensive test results with screenshots and traces
-- Generate report: `npm run report`
+- Generate report: `npx playwright show-report`
 - Located in: `playwright-report/` folder
 
 ### Screenshots
@@ -284,7 +282,7 @@ expect(responseString).not.toContain("camel");
 
 ### UI Mode (Recommended for Interactive Debugging)
 ```bash
-npm run test:ui
+npx playwright test --ui
 ```
 - Step through tests line-by-line
 - Inspect elements in real-time
@@ -292,7 +290,7 @@ npm run test:ui
 
 ### Debug Mode
 ```bash
-npm run test:debug
+npx playwright test --debug
 ```
 - Opens Playwright Inspector
 - Pause and inspect at any point
@@ -300,7 +298,7 @@ npm run test:debug
 
 ### View Test Report
 ```bash
-npm run report
+npx playwright show-report
 ```
 - Open HTML report in browser
 - View test results, screenshots, and traces
