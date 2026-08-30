@@ -1,4 +1,8 @@
-# Playwright Assignment - SauceDemo & Fruit API Test Suite
+# SauceDemo & Fruit API Test Suite
+
+## Student Information
+- Student: Sita Karumudi
+- Assignment: Playwright Assignment
 
 ## 📋 Overview
 This is a professional, industry-ready automation repository that integrates:
