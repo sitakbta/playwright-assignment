@@ -71,6 +71,8 @@ test("TC4: Intentional Failure (The Debugging Challenge)", async ({ page }) => {
     await page.locator('[data-test="add-to-cart-sauce-labs-onesie"]').click();
     await page.locator('[data-test="shopping-cart-link"]').click();
 
-    // Verify the price is $7.99
+    // INTENTIONAL FAILURE: Assert wrong price to trigger failure
+    // The actual price is $7.99, but we assert $9.99 to demonstrate debugging
+    // For Clean test, just updating the price
     await expect(page.locator('[data-test="inventory-item-price"]')).toContainText('$7.99');
 });
